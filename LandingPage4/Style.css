@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100vh;
+    background-color: #dcff7c;
+}
+
+body{
+    font-family: "Neue Montreal";
+}
+
+.wrapper{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    z-index:2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color:#bdbdbd;
+    font-size: 24px;
+    margin:1em;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap:.8px;
+}
+
+.about div{
+    width:fit-content;
+    height: 4.8vh;
+    display: flex;
+    align-items: center;
+    padding: auto;
+    overflow: hidden;
+}
+
+.about div p{
+    width:56%;
+    margin:1.6em;
+    font-weight: 300;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    color:#969696;
+    line-height:1;
+}
+
+.wrapper-img{
+    overflow: hidden;
+    width:22%;
+    height:90vh;
+    position: absolute;
+    top:5%;
+    right:10%;
+    transform: translate(-25%,0);
+}
+
+
+img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity:1;
+    clip-path: inset(100% 0 0 0);
+}
+
+.box{
+    background: #0000;
+    opacity: 1;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:2;
+}
+
+.sub-header{
+    position: absolute;
+    bottom:2em;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sub-header a{
+    text-decoration: none;
+    color:#969696;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+a.contact-link{
+   font-size:24px;
+   margin-left:1em;
+   color:#dcdcdc;
+}
+
+a.about-me{
+    width:30%;
+}
+
+.loading{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-size:2vw;
+}
+
+.overlay{
+    width:100%;
+    height:100vh;
+}
+
+.block{
+    width:5%;
+    height:100vh;
+    background-color: #000;
+    position: fixed;
+}
+
+.block-1{
+    left:0%;
+}
+
+.block-2{
+    left:5%;
+}
+
+.block-3{
+    left:10%;
+}
+
+.block-4{
+    left:15%;
+}
+
+.block-5{
+    left:20%;
+}
+
+.block-6{
+    left:25%;
+}
+
+.block-7{
+    left:30%;
+}
+
+.block-8{
+    left:35%;
+}
+
+.block-9{
+    left:40%;
+}
+
+.block-10{
+    left:45%;
+}
+
+.block-11{
+    left:50%;
+}
+
+.block-12{
+    left:55%;
+}
+
+.block-13{
+    left:60%;
+}
+
+.block-14{
+    left:65%;
+}
+.block-15{
+    left:70%;
+}
+.block-16{
+    left:75%;
+}
+.block-17{
+    left:80%;
+}
+.block-18{
+    left:85%;
+}
+.block-19{
+    left:90%;
+}
+.block-20{
+    left:95%;
+}
