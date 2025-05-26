@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News_Generator</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.3/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <nav class="flex justify-center items-center bg-[#FFFFFF] relative">
+        <img src="assets/9f93137f-aadb-4ed9-a6eb-bff3e05fb928.png" alt="" class="w-60 absolute left-3">
+        <h1 class="text-8xl font-extrabold z-10 ">Times now Global News</h1>
+        <img src="assets/2.png" alt="" class="w-60 absolute right-[5%] top-[5%] z-[1]">
+    </nav>
+
+    <article class="flex items-center justify-center p-6 border-b-4 border-t-4 bg-[#FFFFFF]">
+        <div class="search flex justify-evenly items-center gap-2">
+            <label for="Search" class="text-3xl font-extrabold ">Search</label>
+            <input type="text" placeholder="Eneter Gerne" id="gerne" for="" class="w-[26vw] border-[1px] rounded-[4px] border-gray-400 p-[7px] outline-0">
+            <i class="fa-solid fa-magnifying-glass font-extrabold text-2xl transform translate-x-[-150%] opacity-50 cursor-cell" id="filter"></i>
+        </div>
+    </article>
+
+    <section class="wrapper px-2 mt-2">
+        <!-- content to be added-
+        <h3>
+            No current News For The This Gerne !
+        </h3>
+       -->
+    </section>
+
+    <article class="footer flex flex-col items-end justify-end p-2">
+        <p class="font-extrabold text-[1rem]">~~ by Lucky Baliyan</p>
+        <p class="font-extrabold text-[1rem]"><a class="decoration-0 text-[#1e1e1ee1]" href="https://www.instagram.com/luckybaliyan3507/" target="_blank">My Works</a></p>
+        <span><a class="decoration-0 text-blue-800" href="mailto:baliyanlucky85@gmail.com" target="_blank">baliyanlucky85@gmail.com</a></span>
+    </article>
+
+    <script src="https://unpkg.com/lenis@1.3.3/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="Script.js"></script>
+</body>
+</html>

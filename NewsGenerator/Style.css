@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Arima:wght@100..700&family=Arimo:ital,wght@0,400..700;1,400..700&family=Chewy&family=Concert+One&family=Danfo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=News+Cycle:wght@400;700&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+
+
+*{
+    cursor: cell;
+}
+body{
+    font-family: "Neue Montreal";
+    background-size: 400px 400px;
+    background-image:
+    linear-gradient(to right, grey 2px, transparent 2px),
+    linear-gradient(to bottom, grey 2px, transparent 2px);
+}
+
+
+.search input{
+    background: #FFFFFF;
+}
+
+.search label{
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+nav img {
+    animation: float 1.8s ease-in-out infinite;
+}
+
+.news-article{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    gap:2px;
+    width:100vw;
+    height:100vh;
+    padding:5px;
+    flex-wrap: wrap;
+}
+
+.news-article h2{
+    font-family: "Milker";
+    font-weight: 600;
+    font-size: 2.8rem;
+    color:#d48002f6;
+    letter-spacing: 2px;
+    width:95%;
+}
+
+.news-article p{
+    width:98%;
+    z-index: 900;
+}
+
+
+.news-article:nth-child(even){
+    flex-flow: row-reverse;
+}
+
+.news-article .space{
+    word-spacing: 5px;
+}
+
+
+
+/* responsive design*/
+
+@media (max-width:600px){
+
+    html,body{
+        overflow-x: hidden;
+    }
+
+    body{
+      background-size:200px 200px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap:20px;
+        padding: 5px;
+        width:100%;
+    }
+    nav h1{
+        font-size: clamp(24px,10vw,48px);
+    }
+
+    nav img:first-of-type{
+        display: none;
+    }
+
+    nav img{
+        width:clamp(100px,20vw,120px);
+        height:100%;
+        animation-play-state: paused;
+        left: 75%;
+    }
+
+    article{
+        width:100%;
+        padding:8px;
+    }
+
+    article .search{
+        width:100%;
+    }
+    article label{
+        display: none;
+    }
+
+    article input{
+        width:100%;
+        margin-left: 12px;
+    }
+
+    .news-article{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        gap:0;
+    }
+
+
+    .lower{
+       align-self: center;
+       height: 40%;
+       margin-left:12px;
+    }
+
+    .upper{
+        width:100%;
+    }
+
+    .lower .box{
+        width:90%;
+        height:calc(100% + 22vw);
+    }
+
+    section  .headings{
+        font-size:20px;
+        width:95%;
+        align-self: center;
+        text-align: start;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        z-index: 1000;
+    }
+
+    section .paras{
+        font-size:12px;
+        width:100%;
+    }
+
+    section .paras2{
+        font-size: 10px;
+    }
+
+    .anchor{
+        font-size: 10px;
+    }
+
+    .news-article:nth-child(even){
+        flex-flow: column-reverse;
+    }
+
+    section{
+        margin-bottom: 50px;
+        padding-bottom: 220px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .news-article {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .news-article h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .news-article {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .news-article h2 {
+        font-size: 2.8rem;
+    }
+}
