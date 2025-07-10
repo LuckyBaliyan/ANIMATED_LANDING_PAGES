@@ -285,6 +285,7 @@ nav  .divider{
 
     .img-container .img{
         width:30%;
+        aspect-ratio:3/5;
     }
 
     .header {
